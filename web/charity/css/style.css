@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#cw-logo {
+    height: 40px;
+    width: auto;
+}
+
+#bar {
+    font-size: 30px;
+    margin-bottom: 4%;
+}
+
+.nav-wrapper .nav-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-right .give {
+    background-color: gold;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 5px;
+}
+/*-----------------------------------------------*/
+.nav-left #take:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+#about:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+
+
+.nav-left li .drop-down{
+    text-decoration: none;
+    line-height: 30px;
+    margin-top: 16px;
+    width: 20%;
+    display: none;
+    min-width: 6px;
+    position: absolute;
+    list-style: none;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;   
+    color: black;
+}
+
+.nav-left li a{
+    position: relative;
+}
+
+.nav-left .drop-down li{
+    color: white;
+    padding-top: 18px;
+    display: block;
+}
+.nav-left li:hover .drop-down{
+    display: block;
+}
+
+.nav-left .drop-down a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left li .drop-down1{
+    text-decoration: none;
+    line-height: 30px;
+    margin-top: 16px;
+    width: 20%;
+    display: none;
+    min-width: 6px;
+    position: absolute;
+    list-style: none;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;   
+    color: black;
+}
+
+
+.nav-left .drop-down1 li{
+    color: white;
+    padding-top: 18px;
+    display: block;
+    
+}
+.nav-left li:hover .drop-down1{
+    display: block;
+}
+
+.nav-left .drop-down1 a{
+    text-decoration: none;
+    color: black;
+}
+/*-----------------------------------------------*/
+#charity {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+#charity .charity-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#charity img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    z-index: 0;
+}
+
+.charity-left {
+    height: 100%;
+    width: 35%;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    top: 0;
+}
+.content {
+    z-index: 1;
+    position: absolute;
+    font-size: 1vw;
+    font-family: serif;
+    top: 0;
+}
+
+
+.choice {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 13%;
+}
+
+
+.choice input {
+    display: none;
+}
+
+.choice label {
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.1s;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.choice input:checked+label {
+    background-color: gold;
+}
+
+#give-once-label{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#monthly-label{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-container{
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin-top: 28%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.form-container input[type=radio]{
+    display: none;
+}
+
+.form-container input[type="number"] {
+    display: block;
+    width: 215px;
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-container label{
+    font-size: 1vw;
+}
+
+.form-container h3{
+    height: 50px;
+    font-weight: 500;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+}
+.form-container button{
+    background-color: gold;
+    color: black;
+    width: 80%;
+    height: 40px;
+    font-size: 1vw;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-bottom: 15px;
+}
+
+.amount-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Hide radio inputs */
+.amount-options input[type="radio"] {
+    display: none;
+}
+
+/* Style labels as buttons */
+.amount-options label {
+    padding: 12px 18px;
+    background-color: lightgray;
+    color: black;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+/* Default selected button */
+.amount-options input[type="radio"]:checked + label {
+    background-color: gold;
+}
+.fourth-amount{
+    height: 25px;
+    width: 60px;
+}
+/* Other amount input */
+.fifth-amount {
+    padding: 10px;
+    width: auto; /* Allows it to adjust dynamically */
+    max-width: calc(2 * 85px + 15px);
+    font-size: 1vw;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: lightgray;
+}
+
+.fifth-amount::-webkit-outer-spin-button,
+.fifth-amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fifth-amount[type=number] {
+    -moz-appearance: textfield;
+}
+/* Default styling for all amount buttons */
+.amount-options label {
+    background-color: lightgray;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background to gold when a radio button is selected */
+.amount-options input[type="radio"]:checked + label {
+    background-color: gold;
+}
+
+/* If the "Other amount" input is focused, reset all buttons to lightgray */
+.amount-options:has(.fifth-amount:focus) input[type="radio"] + label {
+    background-color: lightgray !important;
+}
+
+
+/* Full-width sponsor button */
+.sixth-amount {
+    width: 70%;
+    text-align: center;
+}
+
+.policy{
+    color: lightgray;
+    margin-top: 15px;
+    width: 70%;
+    font-size: 10px;
+    margin-left: 15%;
+}
+
+.policy a{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.minimum{
+    padding-bottom: 25px;
+}
+
+.crypto{
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.crypto a{
+    color: black;
+}
