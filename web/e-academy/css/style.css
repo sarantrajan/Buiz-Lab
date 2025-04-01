@@ -1,0 +1,407 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Header Section */
+.head {
+    height: 103vh;
+    width: 100%;
+}
+
+.head img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    position: relative;
+    z-index: 0;
+}
+
+/* Navbar Styling */
+.nav {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+    z-index: 10;
+}
+
+/* Navbar Wrapper */
+.nav .nav-wrapper {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Remove Bullet Points from Navbar */
+.nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+/* Logo Styling */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+.nav-left img {
+    height: 40px; /* Adjust logo size */
+}
+
+/* Navigation Links */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Default Link Styling */
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Set Background for First Child (HOME) */
+.nav-right li:first-child a {
+    background-color: orangered;
+}
+
+/* Hover Effect for Links */
+.nav-right a:hover {
+    background-color: orangered;
+}
+
+/* Remove Background from HOME when Hovering Over Other Links */
+.nav-right:hover li:first-child a {
+    background-color: transparent;
+}
+
+/* Section Wrapper */
+.sec {
+    height: 100%;
+    width: 100%;
+}
+
+.sec .sec-wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Section 1 - Hero Content */
+.sec1 {
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    top: 220px;
+    color: white;
+}
+
+.sec1 h1 {
+    font-size: 38px;
+    font-weight: normal;
+    width: 70%;
+}
+
+.sec1 p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    width: 53%;
+}
+
+/* Call-to-Action Button */
+.sec1 a {
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.sec1 a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Section 2 - About Us */
+.sec2 {
+    height: 85vh;
+    width: 100%;
+    background-color: orangered;
+    margin-bottom: 40px;
+}
+
+.sec2 .sec-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+}
+
+/* About Text */
+.about {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: 50%;
+}
+
+.about h1 {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Underline Effect */
+.about h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 12px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* About Button */
+.about a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.about a:hover {
+    background-color: #363030;
+    color: white;
+}
+
+/* About Image */
+.about-image img {
+    height: 340px;
+    width: 560px;
+    object-fit: cover;
+}
+
+/* Section 3 - Services */
+.sec3 {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Section Heading */
+.heading h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+.heading p {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Service Cards */
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+}
+
+.article h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.article p {
+    font-size: 16px;
+}
+
+.article img {
+    height: 270px;
+    width: 350px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.explore img:hover {
+    transform: scale(1.1);
+}
+
+/* Section 4 - Blog */
+.sec4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* Blog Background */
+.sec4 .blog-bg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+/* Blog Heading */
+.sec4 .blog-head {
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    margin-left: 12%;
+}
+
+.blog-head h1 {
+    font-size: 40px;
+}
+
+/* Blog Content */
+.sec4 .sec4-separate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+}
+
+/* Blog Left Content */
+.sec4-left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 16px;
+}
+
+.sec4-left h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Read More Button */
+.blog-con-readmore {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.blog-con-readmore:hover {
+    background-color: #363030;
+    color: white;
+}
+
+.blog-con-readmore a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Blog Image */
+.sec4-right {
+    height: 100%;
+    width: 55%;
+}
+
+.sec4-right img {
+    height: 340px;
+    width: 540px;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.sec6 {
+    height: 60vh;
+    width: 100%;
+    background-color: #363030;
+    color: white;
+}
+
+.sec6 .sec-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    width: 80%;
+}
+
+/* Footer Columns */
+.sec6-footer-1, .sec6-footer-2, .sec6-footer-3, .sec6-footer-4 {
+    margin-top: 10%;
+    width: 20vw;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Footer Headings */
+.sec6-footer-1 h1, .sec6-footer-2 h1, .sec6-footer-3 h1, .sec6-footer-4 h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer Links */
+.sec6-footer-2 a, .sec6-footer-3 a, .sec6-footer-4 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Copyright Section */
+.copyright {
+    height: 10vh;
+    text-align: center;
+    color: white;
+    background-color: #363030;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: orangered;
+}
