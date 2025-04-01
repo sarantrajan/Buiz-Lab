@@ -1,0 +1,53 @@
+img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: red;
+}
+
+/* For large screens (between 1025px and 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .change {
+        content: url('/image/4.jpg');
+    }
+
+    body {
+        background-color: blue;
+    }
+}
+
+/* For tablets (between 769px and 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .change {
+        content: url('/image/3.jpg');
+    }
+
+    body {
+        background-color: yellow;
+    }
+}
+
+/* For mobile devices (between 480px and 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+    .change {
+        content: url('/image/2.jpg');
+    }
+
+    body {
+        background-color: green;
+    }
+}
+
+/* For small mobile devices (less than 480px) */
+@media (max-width: 479px) {
+    .change {
+        content: url('/image/5.jpeg');
+    }
+
+    body {
+        background-color: orange;
+    }
+}
