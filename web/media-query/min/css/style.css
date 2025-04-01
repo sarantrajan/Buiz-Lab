@@ -1,0 +1,39 @@
+img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: red;
+}
+
+@media (min-width: 768px) {
+    .change {
+        content: url('/image/2.jpg');
+    }
+
+    body {
+        background-color: green;
+    }
+}
+
+@media (min-width: 1024px) {
+    .change {
+        content: url('/image/3.jpg');
+    }
+
+    body {
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 1440px) {
+    .change {
+        content: url('/image/4.jpg');
+    }
+
+    body {
+        background-color: blue;
+    }
+}
